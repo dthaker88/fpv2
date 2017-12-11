@@ -140,6 +140,9 @@ class accountsController extends http\controller
                 $_SESSION["userID"] = $user->id;
 
                 print_r($_SESSION);
+
+
+
             } else {
                 echo 'password does not match';
             }
