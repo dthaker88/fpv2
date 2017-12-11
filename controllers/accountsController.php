@@ -124,11 +124,15 @@ class accountsController extends http\controller
         if ($user == FALSE) {
             echo 'user not found';
 
-            header("Location: index.php?page=tasks&action=all");
+            echo '<a href="index.php?page=accounts&action=register">click here to register</a>';
+
+
+            //header("Location: index.php?page=accounts&action=register");
+            
 
         } else {
-
-            if($user->checkPassword($_POST['password']) == TRUE) {
+//$user->checkPassword($_POST['password']) == TRUE
+            if($_POST['password'] == $user->password) {
 
                 echo 'login';
 
