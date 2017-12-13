@@ -1,3 +1,4 @@
+
 <?php
 
 class accounts extends \database\collection
@@ -15,13 +16,9 @@ class accounts extends \database\collection
             $sql = 'SELECT * FROM ' . $tableName . ' WHERE email = ?';
 
          //grab the only record for find one and return as an object
-            $recordsSet = self::getResults($sql, $email);
+        //self::getResults($sql, $email);
 
-            if (is_null($recordsSet)) {
-                return FALSE;
-            } else {
-                return $recordsSet[0];
-            }
+            return self::getResults($sql, $email);
 
 
 

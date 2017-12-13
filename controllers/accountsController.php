@@ -121,6 +121,8 @@ class accountsController extends http\controller
         $user = accounts::findUserbyEmail($_REQUEST['email']);
 
 
+
+
         if ($user == FALSE) {
             echo 'user not found';
 
@@ -141,7 +143,7 @@ class accountsController extends http\controller
 
                 print_r($_SESSION);
 
-
+                todos::findTasksbyID($_REQUEST["userid"]);
 
             } else {
                 echo 'password does not match';
@@ -149,9 +151,11 @@ class accountsController extends http\controller
 
         }
 
-      //todos::findTasksbyID($_REQUEST['$user']);
+
 
 
     }
+
+
 
 }
