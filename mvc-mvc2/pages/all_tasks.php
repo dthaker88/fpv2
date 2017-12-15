@@ -17,6 +17,9 @@
 
 <body>
 
+<a href="index.php?page=tasks&action=create">Create Task</a>
+
+
 <?php
 //this is how you print something
 
