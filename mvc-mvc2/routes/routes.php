@@ -160,7 +160,7 @@ class routes
         $route->action = 'create';
         $route->page = 'tasks';
         $route->controller = 'tasksController';
-        $route->method = 'form';
+        $route->method = 'newTodoform';
         $routes[] = $route;
 
 

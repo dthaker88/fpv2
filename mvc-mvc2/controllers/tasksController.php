@@ -18,6 +18,13 @@ class tasksController extends http\controller
         self::getTemplate('show_task', $record);
     }
 
+
+    public static function newTodoform()
+    {
+
+        self::getTemplate('todo');
+    }
+
     //to call the show function the url is index.php?page=task&action=list_task
 
     public static function all()
