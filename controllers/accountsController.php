@@ -133,13 +133,16 @@ class accountsController extends http\controller
             
 
         } else {
-//$user->checkPassword($_POST['password']) == TRUE
-            if($_POST['password'] == $user->password) {
+            if($user->checkPassword($_POST['password']) == TRUE) {
+            //if($_POST['password'] == $user->password)
+
 
                 echo 'login';
 
                 session_start();
                 $_SESSION["userID"] = $user->id;
+
+                header("Location: index.php?page=todos&action=all");
 
                 print_r($_SESSION);
 
