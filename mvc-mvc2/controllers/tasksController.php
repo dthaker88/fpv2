@@ -118,7 +118,10 @@ class tasksController extends http\controller
         $task->save();*/
 
       $task = todos::findOne($_REQUEST['id']);
-      print_r ($task);
+      $task->message = $_POST['message'];
+        $task->duedate= $_POST['duedate'];
+        $task->owneremail= $_POST['owneremail'];
+      //print_r ($task);
 
     }
 
