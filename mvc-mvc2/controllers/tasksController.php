@@ -110,12 +110,15 @@ class tasksController extends http\controller
     }
 
     public static function save() {
-        session_start();
+      /*  session_start();
         $task = new todo();
 
         $task->body = $_POST['body'];
         $task->ownerid = $_SESSION['userID'];
-        $task->save();
+        $task->save();*/
+
+      $task = todos::findOne($_REQUEST['id']);
+      print_r ($task);
 
     }
 
