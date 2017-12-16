@@ -62,6 +62,7 @@ class tasksController extends http\controller
         $todo-> owneremail = $_POST['owneremail'];
         $todo -> duedate = $_POST['duedate'];
         $todo -> save();
+        header("Location: index.php?page=tasks&action=all");
 
     }
 
