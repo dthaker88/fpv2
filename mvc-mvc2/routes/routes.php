@@ -180,6 +180,14 @@ class routes
         $routes[] = $route;
 
 
+        $route = new route();
+        $route->http_method = 'POST';
+        $route->action = 'logout';
+        $route->page = 'tasks';
+        $route->controller = 'accountsController';
+        $route->method = 'logout';
+        $routes[] = $route;
+
         return $routes;
     }
 
