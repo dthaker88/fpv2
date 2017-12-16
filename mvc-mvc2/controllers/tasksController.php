@@ -121,6 +121,11 @@ class tasksController extends http\controller
       $task->message = $_POST['message'];
         $task->duedate= $_POST['duedate'];
         $task->owneremail= $_POST['owneremail'];
+        $task->isdone= $_POST['isdone'];
+        $task -> save();
+
+        header("Location: index.php?page=tasks&action=all");
+
       //print_r ($task);
 
     }
