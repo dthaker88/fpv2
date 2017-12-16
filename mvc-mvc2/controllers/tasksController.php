@@ -29,7 +29,14 @@ class tasksController extends http\controller
 
     public static function all()
     {
-        $records = todos::findAll();
+        session_start();
+        //$records = todos::findAll();
+
+        $userID = $_SESSION['userID'];
+
+        $tasks = todos::findTasksbyID($userID);
+
+        //echo $userID;
         /*session_start();
            if(key_exists('userID',$_SESSION)) {
                $userID = $_SESSION['userID'];
@@ -41,7 +48,7 @@ class tasksController extends http\controller
 
         $records = todos::findTasksbyID($userID);
         */
-        self::getTemplate('all_tasks', $records);
+        self::getTemplate('all_tasks', $tasks);
 
     }
     //to call the show function the url is called with a post to: index.php?page=task&action=create
