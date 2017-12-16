@@ -113,6 +113,7 @@ class accountsController extends http\controller
 
         session_start();
         unset($_SESSION['userID']);
+        header("Location: index.php");
     }
 
 
