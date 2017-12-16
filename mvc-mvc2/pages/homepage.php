@@ -30,12 +30,12 @@
 
 <?php
 session_start();
-if(key_exists($_SESSION['userID'])) {}
- echo '<h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>';
-
+if(key_exists('userID', $_SESSION)) {
+    echo '<h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>';
+}
     ?>
-<h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>
-<h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>
+ <!--<h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>
+ <h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>-->
 <h1><a href="index.php?page=tasks&action=logout">Log Out</a></h1>
 
 
