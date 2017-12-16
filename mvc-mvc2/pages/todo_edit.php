@@ -34,6 +34,12 @@
     <input type="submit" value="Submit form">
 </form>
 
+
+<form action="index.php?page=tasks&action=delete&id=<?php echo $data->id; ?> " method="post" id="form1">
+    <button type="submit" form="form1" value="delete">Delete</button>
+</form>
+
+
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="bootstrap/jquery.min.js.download"></script>
 <script src="bootstrap/bootstrap.min.js.download"></script>
