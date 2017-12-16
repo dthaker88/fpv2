@@ -176,7 +176,7 @@ class routes
         $route->action = 'edit';
         $route->page = 'tasks';
         $route->controller = 'tasksController';
-        $route->method = 'editTodoform';
+        $route->method = 'store';
         $routes[] = $route;
 
 
