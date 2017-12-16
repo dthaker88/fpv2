@@ -51,7 +51,15 @@ class tasksController extends http\controller
 
     public static function create()
     {
-        $todo = new todos();
+        $todo = new todo();
+
+        $todo->ownerid = $_SESSION['userID'];
+        $todo->createddate = now();
+        $todo->isdone = $_POST['isdone'];
+        $todo-> message = $_POST['message'];
+        $todo-> owneremail = $_POST['owneremail'];
+        $todo -> duedate = $_POST['duedate'];
+        $todo -> save();
 
     }
 
