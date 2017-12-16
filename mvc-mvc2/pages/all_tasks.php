@@ -23,11 +23,13 @@
 <?php
 //this is how you print something
 
-if ($data = false) {
+if ($data == false) {
 
-    echo 'There is currently no tasks. Please add a task.'
+    echo 'There is currently no tasks. Please add a task.';
 }
-//print utility\htmlTable::genarateTableFromMultiArray($data);
+else {
+    print utility\htmlTable::genarateTableFromMultiArray($data);
+}
 
 
 ?>
