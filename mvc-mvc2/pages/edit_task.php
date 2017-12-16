@@ -1,10 +1,10 @@
 <!--put a page with in a form to edit a task and have a delete button in another form to delete
 
-<form action="index.php?page=tasks&action=delete&id=<?php /*$data['id'] */?> " method="post" id="form1">
-    <button type="submit" form="form1" value="delete">Delete</button>
-</form>-->
+<!--<form action="index.php?page=tasks&action=delete&id=--><?php ///*$data['id'] */?><!-- " method="post" id="form1">-->
+<!--    <button type="submit" form="form1" value="delete">Delete</button>-->
+<!--</form>-->-->
 
-<!doctype html>
+<!--<!doctype html>
 
 <html lang="en">
 <head>
@@ -26,10 +26,10 @@
 <body>
 
 
-<form action="index.php?page=tasks&action=edit&id=<?php echo $data->id?>" method="post">
+<form action="index.php?page=tasks&action=edit&id=<?php /*echo $data->id*/?>" method="post">
     <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" name="owneremail" class="form-control" id="exampleInputEmail1" placeholder="Email" <?php $data->owneremail; ?>>
+        <input type="email" name="owneremail" class="form-control" id="exampleInputEmail1" placeholder="Email" <?php /*$data->owneremail; */?>>
     </div>
 
     Owner ID: <input type="text" name="ownerid"><br>
@@ -48,3 +48,4 @@
 </body>
 </html>
 
+-->
