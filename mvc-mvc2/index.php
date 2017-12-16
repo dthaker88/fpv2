@@ -11,6 +11,8 @@ include_once "autoload.php";
 //put your database credentials here
 include_once "database.php";
 
+include_once "pages/bootstrap/header.php";
+
 //this starts the program as a static.  Start tracing the program from here following the classes and methods being called
 $response = http\processRequest::createResponse();
 

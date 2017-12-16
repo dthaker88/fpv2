@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="css/styles.css?v=1.0">
 
+
+
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
@@ -19,13 +21,21 @@
 
 
 <form action="index.php?page=todo&action=register" method="post">
-    Owner Email: <input type="text" name="owneremail" <?php $data->owneremail; <br>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" name="owneremail" class="form-control" id="exampleInputEmail1" placeholder="Email" <?php $data->owneremail; ?>>
+    </div>
+
     Owner ID: <input type="text" name="ownerid"><br>
     Due Date: <input type="text" name="duedate"><br>
     Message: <input type="text" name="message"><br>
     Is done?: <input type="text" name="isdone"><br>
     <input type="submit" value="Submit form">
 </form>
+
+<!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/jquery.min.js.download"></script>
+   <script src="bootstrap/bootstrap.min.js.download"></script>
 
 
 <script src="js/scripts.js"></script>

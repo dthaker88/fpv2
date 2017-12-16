@@ -28,6 +28,10 @@ print_r($data);
 
 
 
+<a class="btn btn-info" href="index.php?page=tasks&action=edit&id=<?php echo $data->id; ?>">Edit</a>
+
+
+</body>
 
 <script src="js/scripts.js"></script>
 </body>

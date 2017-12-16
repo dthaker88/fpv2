@@ -63,6 +63,28 @@ class tasksController extends http\controller
 
     }
 
+
+    public static function viewEditTodoform()
+    {
+        self::getTemplate('edit_task', "");
+    }
+
+
+        public static function editTodoform()
+    {
+        $record = todos::findOne($_REQUEST['id']);
+
+        $record->email = $_POST["email"];
+
+
+
+        $record->save();
+        header("Location: index.php?page=tasks&action=all");
+       // self::getTemplate('edit_task', $record);
+
+
+
+    }
     //this would be for the post for sending the task edit form
     public static function store()
     {
