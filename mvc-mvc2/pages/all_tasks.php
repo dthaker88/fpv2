@@ -25,7 +25,7 @@
 
 if ($data == false) {
 
-    echo 'There is currently no tasks. Please add a task.';
+    echo '<p> There is currently no tasks. Please add a task. </p>';
 }
 else {
     print utility\htmlTable::genarateTableFromMultiArray($data);
