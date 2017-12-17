@@ -34,13 +34,14 @@
 session_start();
 if(key_exists('userID', $_SESSION)) {
     echo '<h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>';
+    echo '<h1><a href="index.php?page=accounts&action=logout">Log Out</a></h1>';
     //echo '<h1><a href="index.php?page=tasks&action=logout">Log Out</a></h1>';
 }
     ?>
  <!--<h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>
  <h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>-->
 
-<h1><a href="index.php?page=tasks&action=logout">Log Out</a></h1>
+
 
 
 <form action="index.php?page=accounts&action=login" method="POST">
