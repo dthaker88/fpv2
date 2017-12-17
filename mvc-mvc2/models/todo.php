@@ -19,14 +19,14 @@ final class todo extends database\model
     }
 
 
-    public function validate(){
+   /* public function validate(){
         $valid = TRUE;
         if($this -> message == '') {
             $valid = FALSE;
             echo 'Nothing is entered';
 }
 //return $valid;
-}
+}*/
 
 }
 
