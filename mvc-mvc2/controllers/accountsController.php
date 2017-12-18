@@ -56,11 +56,11 @@ class accountsController extends http\controller
             $user->phone = $_POST['phone'];
             $user->birthday = $_POST['birthday'];
             $user->gender = $_POST['gender'];
-            //$user->password = $_POST['password'];
+            $user->password = $_POST['password'];
             //this creates the password
             //this is a mistake you can fix...
             //Turn the set password function into a static method on a utility class.
-            $user->password = $user->setPassword($_POST['password']);
+            //$user->password = $user->setPassword($_POST['password']);
             $user->save();
 
             //you may want to send the person to a
