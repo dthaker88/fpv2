@@ -38,6 +38,10 @@ if(key_exists('userID', $_SESSION)) {
     echo '<h1><a href="index.php?page=accounts&action=all">Show All Accounts</a></h1>';
     //echo '<h1><a href="index.php?page=tasks&action=logout">Log Out</a></h1>';
 }
+
+else {
+    include 'login_form.php';
+}
     ?>
  <!--<h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>
  <h1><a href="index.php?page=tasks&action=all">Show All Tasks</a></h1>-->
@@ -45,7 +49,7 @@ if(key_exists('userID', $_SESSION)) {
 
 
 
-<form action="index.php?page=accounts&action=login" method="POST">
+<!--<form action="index.php?page=accounts&action=login" method="POST">
 
     <div class="container">
         <label><b>Username</b></label>
@@ -59,7 +63,7 @@ if(key_exists('userID', $_SESSION)) {
 
 
 </form>
-<h1><a href="index.php?page=accounts&action=register">Register</a></h1>
+<h1><a href="index.php?page=accounts&action=register">Register</a></h1>-->
 
 
 <script src="js/scripts.js"></script>
